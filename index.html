@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Long Fitness Center — Fort Riley, KS | AI & Automated Fitness Hub</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            tactical: {
+              950: '#090d10',
+              900: '#10171d',
+              850: '#162028',
+              800: '#1e2b36',
+              accent: '#eab308',
+              accentHover: '#facc15',
+              emerald: '#10b981'
+            }
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    body {
+      background-color: #090d10;
+      color: #f1f5f9;
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+    .glass-card {
+      background: rgba(22, 32, 40, 0.78);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(148, 163, 184, 0.14);
+    }
+    .chat-scroll::-webkit-scrollbar {
+      width: 6px;
+    }
+    .chat-scroll::-webkit-scrollbar-thumb {
+      background: #334155;
+      border-radius: 9999px;
+    }
+  </style>
+</head>
+<body class="antialiased selection:bg-yellow-500 selection:text-slate-950">
+
+  <!-- Top Navigation -->
+  <header class="sticky top-0 z-40 border-b border-slate-800/80 bg-tactical-950/90 backdrop-blur-md">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-3.5 sm:px-6 lg:px-8">
+      <a href="#" class="flex items-center gap-3">
+        <div class="flex h-10 w-10 items-center justify-center rounded-lg bg-yellow-500 font-black text-slate-950 shadow-lg shadow-yellow-500/20">
+          LFC
+        </div>
+        <div>
+          <span class="block text-sm font-extrabold tracking-wider text-white uppercase">Long Fitness Center</span>
+          <span class="block text-[11px] font-medium text-slate-400">8069 Normandy Dr, Fort Riley, KS 66442</span>
+        </div>
+      </a>
+
+      <nav class="hidden items-center gap-6 text-sm font-medium text-slate-300 md:flex">
+        <a href="#zones" class="hover:text-yellow-400 transition">Training Zones</a>
+        <a href="#ai-coach" class="hover:text-yellow-400 transition">AI Coach & Bot</a>
+        <a href="#automation" class="hover:text-yellow-400 transition">Smart Check-In</a>
+        <a href="#outreach" class="hover:text-yellow-400 transition">Automated Outreach</a>
+      </nav>
+
+      <div class="flex items-center gap-2.5">
+        <button onclick="toggleSettingsModal()" class="rounded-lg border border-slate-700 bg-tactical-850 px-3 py-2 text-xs font-semibold text-slate-200 hover:border-yellow-500/60 hover:text-yellow-400 transition">
+          AI Settings <span id="modeBadge" class="ml-1 rounded bg-emerald-500/20 px-1.5 py-0.5 text-[10px] text-emerald-300">Demo AI</span>
+        </button>
+        <a href="#outreach" class="rounded-lg bg-yellow-500 px-3.5 py-2 text-xs font-bold text-slate-950 hover:bg-yellow-400 transition">
+          Contact / Inquire
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative overflow-hidden border-b border-slate-800/70 pt-12 pb-16 sm:pt-16 sm:pb-24">
+    <div class="pointer-events-none absolute -top-24 left-1/2 h-96 w-[44rem] -translate-x-1/2 rounded-full bg-yellow-500/10 blur-3xl"></div>
+
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="grid items-center gap-10 lg:grid-cols-12">
+        <div class="lg:col-span-7">
+          <div class="mb-4 inline-flex items-center gap-2 rounded-full border border-yellow-500/30 bg-yellow-500/10 px-3.5 py-1 text-xs font-semibold text-yellow-300">
+            <span class="h-2 w-2 animate-pulse rounded-full bg-yellow-400"></span>
+            AI-Powered Facility Hub • Fort Riley Installation
+          </div>
+
+          <h1 class="text-4xl font-black tracking-tight text-white sm:text-5xl lg:text-6xl">
+            Strength, Readiness &amp; <span class="text-yellow-400">Automated</span> Performance
+          </h1>
+
+          <p class="mt-5 max-w-2xl text-base leading-relaxed text-slate-300 sm:text-lg">
+            Digital operations portal for <strong class="text-white">Long Fitness Center</strong> (8069 Normandy Dr, Fort Riley, KS 66442, United States). Built with an instant AI workout &amp; facility assistant, automated check-in &amp; traffic forecasting, and smart inquiry routing.
+          </p>
+
+          <div class="mt-7 flex flex-wrap gap-3.5">
+            <a href="#ai-coach" class="rounded-xl bg-yellow-500 px-5 py-3 text-sm font-bold text-slate-950 shadow-lg shadow-yellow-500/20 hover:bg-yellow-400 transition">
+              Launch AI Fitness Coach
+            </a>
+            <a href="#automation" class="rounded-xl border border-slate-700 bg-tactical-850 px-5 py-3 text-sm font-semibold text-white hover:border-slate-500 transition">
+              Simulate Automated Check-In
+            </a>
+          </div>
+
+          <!-- Key Facility Facts -->
+          <div class="mt-9 grid grid-cols-1 gap-3 sm:grid-cols-3">
+            <div class="glass-card rounded-xl p-3.5">
+              <p class="text-[11px] font-bold tracking-wider text-yellow-400 uppercase">Location</p>
+              <p class="mt-1 text-sm font-semibold text-white">8069 Normandy Dr</p>
+              <p class="text-xs text-slate-400">Fort Riley, KS 66442, USA</p>
+            </div>
+            <div class="glass-card rounded-xl p-3.5">
+              <p class="text-[11px] font-bold tracking-wider text-yellow-400 uppercase">Phone Line</p>
+              <p class="mt-1 text-sm font-semibold text-white">+1 785-239-4683</p>
+              <p class="text-xs text-slate-400">Installation MWR Desk</p>
+            </div>
+            <div class="glass-card rounded-xl p-3.5">
+              <p class="text-[11px] font-bold tracking-wider text-yellow-400 uppercase">Standard Hours</p>
+              <p class="mt-1 text-sm font-semibold text-white">Mon–Fri: 5 AM – 8 PM</p>
+              <p class="text-xs text-slate-400">Closed Wknds &amp; Fed Holidays</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Live Automation Telemetry Card -->
+        <div class="lg:col-span-5">
+          <div class="glass-card rounded-2xl p-6 shadow-2xl">
+            <div class="flex items-center justify-between border-b border-slate-800 pb-4">
+              <div>
+                <p class="text-xs font-bold tracking-wider text-yellow-400 uppercase">Live Automation Telemetry</p>
+                <h2 class="mt-0.5 text-lg font-bold text-white">Floor &amp; Workflow Status</h2>
+              </div>
+              <span class="rounded-full bg-emerald-500/15 px-2.5 py-1 text-xs font-semibold text-emerald-300">
+                ● Systems Active
+              </span>
+            </div>
+
+            <div class="mt-5 space-y-4">
+              <div>
+                <div class="flex justify-between text-xs font-medium">
+                  <span class="text-slate-300">Estimated Floor Load (Simulated)</span>
+                  <span id="loadPercentText" class="font-bold text-emerald-400">34% • Low Crowd</span>
+                </div>
+                <div class="mt-1.5 h-2.5 w-full overflow-hidden rounded-full bg-slate-800">
+                  <div id="loadBar" class="h-full w-[34%] rounded-full bg-emerald-400 transition-all duration-500"></div>
+                </div>
+              </div>
+
+              <div class="grid grid-cols-2 gap-3 pt-1">
+                <div class="rounded-xl border border-slate-800 bg-tactical-900/90 p-3.5">
+                  <p class="text-xs text-slate-400">AI Plans Generated Today</p>
+                  <p id="plansCount" class="mt-1 text-2xl font-black text-white">128</p>
+                </div>
+                <div class="rounded-xl border border-slate-800 bg-tactical-900/90 p-3.5">
+                  <p class="text-xs text-slate-400">Automated Check-Ins</p>
+                  <p id="checkinsCount" class="mt-1 text-2xl font-black text-yellow-400">342</p>
+                </div>
+              </div>
+
+              <div class="rounded-xl border border-yellow-500/20 bg-yellow-500/5 p-3.5 text-xs leading-relaxed text-slate-300">
+                <strong class="text-yellow-300">Access &amp; Outreach Note:</strong> Fort Riley is an active U.S. Army installation. Base entry requires authorized credentials/visitor vetting, and inquiries from outside the base (including from India) are routed via MWR/installation channels.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Training Zones -->
+  <section id="zones" class="border-b border-slate-800/70 py-16">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="max-w-2xl">
+        <p class="text-xs font-bold tracking-wider text-yellow-400 uppercase">Facility Overview</p>
+        <h2 class="mt-1 text-3xl font-extrabold text-white">Core Training &amp; Conditioning Zones</h2>
+        <p class="mt-2 text-sm text-slate-400">Structured around strength, functional conditioning, endurance, and recovery workflows.</p>
+      </div>
+
+      <div class="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+        <div class="glass-card rounded-xl p-5">
+          <div class="mb-3 inline-flex h-9 w-9 items-center justify-center rounded-lg bg-yellow-500/15 font-bold text-yellow-400">01</div>
+          <h3 class="text-base font-bold text-white">Free Weights &amp; Racks</h3>
+          <p class="mt-1.5 text-xs leading-relaxed text-slate-400">Power racks, squat stations, Olympic platforms, and dumbbells for progressive overload and combat readiness.</p>
+        </div>
+        <div class="glass-card rounded-xl p-5">
+          <div class="mb-3 inline-flex h-9 w-9 items-center justify-center rounded-lg bg-yellow-500/15 font-bold text-yellow-400">02</div>
+          <h3 class="text-base font-bold text-white">Functional Turf &amp; Sleds</h3>
+          <p class="mt-1.5 text-xs leading-relaxed text-slate-400">Kettlebells, medicine balls, battle ropes, prowlers, and agility circuits for high-output conditioning.</p>
+        </div>
+        <div class="glass-card rounded-xl p-5">
+          <div class="mb-3 inline-flex h-9 w-9 items-center justify-center rounded-lg bg-yellow-500/15 font-bold text-yellow-400">03</div>
+          <h3 class="text-base font-bold text-white">Cardio &amp; Aerobic Deck</h3>
+          <p class="mt-1.5 text-xs leading-relaxed text-slate-400">Treadmills, rowers, assault bikes, and ellipticals for steady-state aerobic base and interval work.</p>
+        </div>
+        <div class="glass-card rounded-xl p-5">
+          <div class="mb-3 inline-flex h-9 w-9 items-center justify-center rounded-lg bg-yellow-500/15 font-bold text-yellow-400">04</div>
+          <h3 class="text-base font-bold text-white">Mobility &amp; Recovery</h3>
+          <p class="mt-1.5 text-xs leading-relaxed text-slate-400">Dedicated stretching space, foam rollers, and warm-up/cool-down protocols guided by AI routines.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AI Workout Generator & Concierge Chatbot -->
+  <section id="ai-coach" class="border-b border-slate-800/70 py-16">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="mb-8 flex flex-col justify-between gap-4 md:flex-row md:items-end">
+        <div>
+          <p class="text-xs font-bold tracking-wider text-yellow-400 uppercase">Artificial Intelligence</p>
+          <h2 class="mt-1 text-3xl font-extrabold text-white">AI Workout Builder &amp; Facility Assistant</h2>
+        </div>
+        <p class="text-xs text-slate-400">Ask about hours, address, access rules, or generate a custom session.</p>
+      </div>
+
+      <div class="grid gap-6 lg:grid-cols-12">
+        <!-- Instant AI Workout Generator -->
+        <div class="glass-card rounded-2xl p-6 lg:col-span-5">
+          <h3 class="text-lg font-bold text-white">1-Click AI Session Generator</h3>
+          <p class="mt-1 text-xs text-slate-400">Select your goal, duration, and focus to generate a structured workout.</p>
+
+          <form id="workoutForm" class="mt-5 space-y-4">
+            <div>
+              <label class="block text-xs font-semibold text-slate-300">Primary Goal</label>
+              <select id="goalSelect" class="mt-1.5 w-full rounded-lg border border-slate-700 bg-tactical-900 px-3 py-2.5 text-sm text-white focus:border-yellow-500 focus:outline-none">
+                <option value="Strength & Power">Strength &amp; Power</option>
+                <option value="Endurance & Conditioning">Endurance &amp; Conditioning</option>
+                <option value="Hybrid / Athletic Circuit">Hybrid / Athletic Circuit</option>
+                <option value="Mobility & Recovery">Mobility &amp; Recovery</option>
+              </select>
+            </div>
+
+            <div class="grid grid-cols-2 gap-3">
+              <div>
+                <label class="block text-xs font-semibold text-slate-300">Duration (Minutes)</label>
+                <select id="durationSelect" class="mt-1.5 w-full rounded-lg border border-slate-700 bg-tactical-900 px-3 py-2.5 text-sm text-white focus:border-yellow-500 focus:outline-none">
+                  <option value="30">30 mins</option>
+                  <option value="45" selected>45 mins</option>
+                  <option value="60">60 mins</option>
+                </select>
+              </div>
+              <div>
+                <label class="block text-xs font-semibold text-slate-300">Experience Level</label>
+                <select id="levelSelect" class="mt-1.5 w-full rounded-lg border border-slate-700 bg-tactical-900 px-3 py-2.5 text-sm text-white focus:border-yellow-500 focus:outline-none">
+                  <option value="Foundational">Foundational</option>
+                  <option value="Intermediate" selected>Intermediate</option>
+                  <option value="Advanced">Advanced</option>
+                </select>
+              </div>
+            </div>
+
+            <button type="submit" class="w-full rounded-xl bg-yellow-500 py-2.5 text-sm font-bold text-slate-950 hover:bg-yellow-400 transition">
+              Generate AI Workout Plan
+            </button>
+          </form>
+
+          <div id="workoutOutput" class="mt-5 rounded-xl border border-slate-800 bg-tactical-950/90 p-4 text-xs leading-relaxed text-slate-200">
+            <p class="font-bold text-yellow-400">Sample Plan Ready — Click Generate to Customize</p>
+            <p class="mt-1.5 text-slate-400">Warm-Up (6m): Dynamic mobility + light row/jog.</p>
+            <p class="mt-1 text-slate-300">• Barbell Back Squat: 4 sets × 6 reps (RPE 8)</p>
+            <p class="text-slate-300">• Weighted Pull-Ups or Lat Pulldown: 4 × 8 reps</p>
+            <p class="text-slate-300">• Sled Push + Kettlebell Swings: 4 rounds × 30m / 15 reps</p>
+          </div>
+        </div>
+
+        <!-- Interactive AI Concierge Chat -->
+        <div class="glass-card flex flex-col rounded-2xl p-6 lg:col-span-7">
+          <div class="flex items-center justify-between border-b border-slate-800 pb-3.5">
+            <div>
+              <h3 class="text-lg font-bold text-white">AI Facility &amp; Inquiry Assistant</h3>
+              <p class="text-xs text-slate-400">Answers questions on Long Fitness Center, hours, address, and remote outreach.</p>
+            </div>
+            <div class="flex flex-wrap gap-1.5">
+              <button type="button" onclick="quickAsk('What are the hours and address?')" class="rounded-md border border-slate-700 bg-tactical-900 px-2.5 py-1 text-[11px] text-slate-300 hover:border-yellow-500/60">Hours &amp; Address</button>
+              <button type="button" onclick="quickAsk('How do I inquire from India?')" class="rounded-md border border-slate-700 bg-tactical-900 px-2.5 py-1 text-[11px] text-slate-300 hover:border-yellow-500/60">Inquiring from India</button>
+            </div>
+          </div>
+
+          <div id="chatMessages" class="chat-scroll my-4 h-72 space-y-3 overflow-y-auto pr-1 text-sm">
+            <div class="max-w-[88%] rounded-xl rounded-tl-sm border border-slate-800 bg-tactical-900 p-3.5 text-slate-200">
+              <span class="block text-[11px] font-bold text-yellow-400">AI Assistant</span>
+              Welcome to the Long Fitness Center portal (8069 Normandy Dr, Fort Riley, KS 66442). Ask me about facility hours, phone support (+1 785-239-4683), base access rules, or how to reach out from India.
+            </div>
+          </div>
+
+          <form id="chatForm" class="mt-auto flex gap-2">
+            <input id="chatInput" type="text" required placeholder="Ask a question about Long Fitness Center or AI automation..." class="flex-1 rounded-xl border border-slate-700 bg-tactical-900 px-4 py-2.5 text-sm text-white placeholder-slate-500 focus:border-yellow-500 focus:outline-none" />
+            <button type="submit" class="rounded-xl bg-yellow-500 px-5 py-2.5 text-sm font-bold text-slate-950 hover:bg-yellow-400 transition">
+              Send
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Smart Automated Check-In & Pass Simulator -->
+  <section id="automation" class="border-b border-slate-800/70 py-16">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="max-w-2xl">
+        <p class="text-xs font-bold tracking-wider text-yellow-400 uppercase">Workflow Automation</p>
+        <h2 class="mt-1 text-3xl font-extrabold text-white">Automated Check-In &amp; Status Pass</h2>
+        <p class="mt-2 text-sm text-slate-400">Simulates an automated entry/check-in workflow with instant pass code issuance and activity logging.</p>
+      </div>
+
+      <div class="mt-8 grid gap-6 lg:grid-cols-12">
+        <form id="checkinForm" class="glass-card space-y-4 rounded-2xl p-6 lg:col-span-6">
+          <div>
+            <label class="block text-xs font-semibold text-slate-300">Full Name</label>
+            <input id="memberName" type="text" required placeholder="e.g., Alex Morgan" class="mt-1.5 w-full rounded-lg border border-slate-700 bg-tactical-900 px-3.5 py-2.5 text-sm text-white focus:border-yellow-500 focus:outline-none" />
+          </div>
+          <div class="grid gap-4 sm:grid-cols-2">
+            <div>
+              <label class="block text-xs font-semibold text-slate-300">Affiliation Type</label>
+              <select id="affiliationSelect" class="mt-1.5 w-full rounded-lg border border-slate-700 bg-tactical-900 px-3.5 py-2.5 text-sm text-white focus:border-yellow-500 focus:outline-none">
+                <option value="Active Duty / Military">Active Duty / Military</option>
+                <option value="Family / Dependent">Family / Dependent</option>
+                <option value="DoD Civilian / Authorized">DoD Civilian / Authorized</option>
+                <option value="External / Remote Inquiry">External / Remote Inquiry</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-slate-300">Target Zone</label>
+              <select id="zoneSelect" class="mt-1.5 w-full rounded-lg border border-slate-700 bg-tactical-900 px-3.5 py-2.5 text-sm text-white focus:border-yellow-500 focus:outline-none">
+                <option value="Free Weights & Racks">Free Weights &amp; Racks</option>
+                <option value="Functional Turf & Sleds">Functional Turf &amp; Sleds</option>
+                <option value="Cardio & Aerobic Deck">Cardio &amp; Aerobic Deck</option>
+                <option value="Mobility & Recovery">Mobility &amp; Recovery</option>
+              </select>
+            </div>
+          </div>
+          <button type="submit" class="w-full rounded-xl bg-yellow-500 py-2.5 text-sm font-bold text-slate-950 hover:bg-yellow-400 transition">
+            Run Automated Check-In
+          </button>
+        </form>
+
+        <div class="glass-card rounded-2xl p-6 lg:col-span-6">
+          <h3 class="text-base 
